@@ -1,27 +1,26 @@
 function App() {
-  function exclaim(string: string) {
-    return string + '!';
+  let count = 5;
+
+  while (count > 5) {
+    console.log('Countdown: 5', count);
+    count -= 1;
   }
 
-  const exclaimArrow = (string: string) => string + '!';
-
-  const user = {
-    name: 'François Bouchard',
-    city: 'Saint-Louis-du-Ha! Ha!',
-    province: 'Québec',
-    country: 'Canada',
-    postalCode: 'A1B 2C3',
+  const customStyles = {
+    color: 'blue',
+    width: 200
   };
 
-  const { name, country } = user;
-  const fruits = ['apple', 'banana', 'cantaloupe'];
-  const [firstFruit, secondFruit] = fruits;
+  function shoutSentence(sentence: string) {
+    return sentence.toUpperCase();
+  }
+
+  console.log(shoutSentence('Hello World'));
   
-  console.log(firstFruit);
 
   return (
     <>
-      <h1>Hello</h1>
+      <h1 style={customStyles}>Hello World</h1>
     </>
   );
 }
