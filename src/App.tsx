@@ -1,4 +1,4 @@
-function App() {
+export default function App() {
   let count = 5;
 
   while (count > 5) {
@@ -8,7 +8,7 @@ function App() {
 
   const customStyles = {
     color: 'blue',
-    width: 200
+    width: 200,
   };
 
   function shoutSentence(sentence: string) {
@@ -16,7 +16,6 @@ function App() {
   }
 
   console.log(shoutSentence('Hello World'));
-  
 
   return (
     <>
@@ -24,5 +23,3 @@ function App() {
     </>
   );
 }
-
-export default App;
