@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function ContactCard({ contactList }: ContactListProps) {
+export default function ContactCard({ contactList }: IProps) {
   return (
     <ul>
       {contactList.map((contact) => (
@@ -18,7 +18,7 @@ export default function ContactCard({ contactList }: ContactListProps) {
   );
 }
 
-type ContactListProps = {
+type IProps = {
   contactList: {
     name: string;
     job: string;
