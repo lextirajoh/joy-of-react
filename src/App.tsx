@@ -1,3 +1,4 @@
+import Button from './components/Button';
 import ContactCard from './components/ContactCard';
 
 export default function App() {
@@ -26,6 +27,8 @@ export default function App() {
   return (
     <>
       <ContactCard contactList={contactList} />
+      <Button status="cancel">Cancel</Button>
+      <Button status="confirm">Confirm</Button>
     </>
   );
 }
