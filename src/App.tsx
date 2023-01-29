@@ -1,25 +1,32 @@
+import ContactCard from './components/ContactCard';
+
 export default function App() {
-  let count = 5;
-
-  while (count > 5) {
-    console.log('Countdown: 5', count);
-    count -= 1;
-  }
-
-  const customStyles = {
-    color: 'blue',
-    width: 200,
-  };
-
-  function shoutSentence(sentence: string) {
+  function shoutSentence(sentence: string): string {
     return sentence.toUpperCase();
   }
 
-  console.log(shoutSentence('Hello World'));
+  const contactList = [
+    {
+      name: 'Sunita Kumar',
+      job: 'Electrical Engineer',
+      email: 'sunita.kumar@acme.co',
+    },
+    {
+      name: 'Henderson G. Sterling II',
+      job: 'Receptionist',
+      email: 'henderson-the-second@acme.co',
+    },
+    {
+      name: 'Aoi Kobayashi',
+      job: 'President',
+      email: 'kobayashi.aoi@acme.co',
+    },
+  ];
 
   return (
     <>
-      <h1 style={customStyles}>Hello World</h1>
+      <ContactCard contactList={contactList} />
     </>
   );
 }
+//
