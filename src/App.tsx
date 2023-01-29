@@ -8,16 +8,19 @@ export default function App() {
 
   const contactList = [
     {
+      id: 1,
       name: 'Sunita Kumar',
       job: 'Electrical Engineer',
       email: 'sunita.kumar@acme.co',
     },
     {
+      id: 2,
       name: 'Henderson G. Sterling II',
       job: 'Receptionist',
       email: 'henderson-the-second@acme.co',
     },
     {
+      id: 3,
       name: 'Aoi Kobayashi',
       job: 'President',
       email: 'kobayashi.aoi@acme.co',

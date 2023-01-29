@@ -4,7 +4,7 @@ export default function ContactCard({ contactList }: IProps) {
   return (
     <ul>
       {contactList.map((contact) => (
-        <li className="contact-card" key={contact.name}>
+        <li className="contact-card" key={contact.id}>
           <h2>{contact.name}</h2>
           <dl>
             <dt>Job</dt>
@@ -20,6 +20,7 @@ export default function ContactCard({ contactList }: IProps) {
 
 type IProps = {
   contactList: {
+    id: number;
     name: string;
     job: string;
     email: string;
