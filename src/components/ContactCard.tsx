@@ -1,7 +1,25 @@
-export default function ContactCard({ contactList }: IProps) {
+export default function ContactCard() {
+  const data = [
+    {
+      name: 'Sunita Kumar',
+      job: 'Electrical Engineer',
+      email: 'sunita.kumar@acme.co',
+    },
+    {
+      name: 'Henderson G. Sterling II',
+      job: 'Receptionist',
+      email: 'henderson-the-second@acme.co',
+    },
+    {
+      name: 'Aoi Kobayashi',
+      job: 'President',
+      email: 'kobayashi.aoi@acme.co',
+    },
+  ];
+
   return (
     <ul>
-      {contactList.map((contact) => (
+      {data.map((contact) => (
         <li className="contact-card" key={crypto.randomUUID()}>
           <h2>{contact.name}</h2>
           <dl>
@@ -15,11 +33,3 @@ export default function ContactCard({ contactList }: IProps) {
     </ul>
   );
 }
-
-type IProps = {
-  contactList: {
-    name: string;
-    job: string;
-    email: string;
-  }[];
-};
