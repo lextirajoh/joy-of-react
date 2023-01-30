@@ -1,4 +1,4 @@
-export default function Button({ status, children }: IProps) {
+export function Button({ status, children }: IProps) {
   let themeColor;
 
   if (status === 'cancel') {

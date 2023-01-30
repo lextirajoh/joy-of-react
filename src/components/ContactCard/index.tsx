@@ -1,4 +1,4 @@
-export default function ContactCard() {
+export function ContactCard() {
   const data = [
     {
       name: 'Sunita Kumar',

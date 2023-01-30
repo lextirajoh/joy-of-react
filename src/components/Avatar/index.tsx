@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Avatar() {
+export function Avatar() {
   const data = [
     {
       src: 'https://sandpack-bundler.vercel.app/img/avatars/001.png',
@@ -22,11 +22,13 @@ export default function Avatar() {
 
   return (
     <>
-      {data.map((avatar) => (
-        <button className="avatar-btn" key={crypto.randomUUID()}>
-          <img className="avatar" src={avatar.src} alt={avatar.alt} />
-        </button>
-      ))}
+      <div className="avatar-set">
+        {data.map((avatar) => (
+          <button className="avatar-btn" key={crypto.randomUUID()}>
+            <img className="avatar" src={avatar.src} alt={avatar.alt} />
+          </button>
+        ))}
+      </div>
     </>
   );
 }

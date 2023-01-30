@@ -1,6 +1,4 @@
-import Avatar from './components/Avatar';
-import Button from './components/Button';
-import ContactCard from './components/ContactCard';
+import { Avatar, Button, ContactCard, ShoppingCart } from './components';
 
 export default function App() {
   function shoutSentence(sentence: string): string {
@@ -9,10 +7,11 @@ export default function App() {
 
   return (
     <>
-      <ContactCard />
+      {/* <ContactCard />
       <Button status="cancel">Cancel</Button>
       <Button status="confirm">Confirm</Button>
-      <Avatar/>
+      <Avatar /> */}
+      <ShoppingCart />
     </>
   );
 }
