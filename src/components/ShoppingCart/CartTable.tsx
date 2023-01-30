@@ -1,7 +1,4 @@
 export function CartTable({ items }: IProps) {
-  // TODO: Map through “items”, creating 1 row
-  // per item.
-
   return (
     <table className="shopping-cart">
       <thead>
@@ -12,13 +9,15 @@ export function CartTable({ items }: IProps) {
         </tr>
       </thead>
       <tbody>
-        <tr className="cart-row">
-          <td>
-            <img className="product-thumb" src={items[0].imageSrc} alt={items[0].imageAlt} />
-          </td>
-          <td>{items[0].title}</td>
-          <td>${items[0].price}</td>
-        </tr>
+        {items.map((item) => (
+          <tr className="cart-row" key={item.id}>
+            <td>
+              <img className="product-thumb" src={item.imageSrc} alt={item.imageAlt} />
+            </td>
+            <td>{item.title}</td>
+            <td>${item.price}</td>
+          </tr>
+        ))}
       </tbody>
     </table>
   );
