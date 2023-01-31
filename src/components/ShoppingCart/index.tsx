@@ -1,4 +1,4 @@
-import { CartTable } from './CartTable';
+import CartTable from "./CartTable";
 
 export function ShoppingCart() {
   const items = [

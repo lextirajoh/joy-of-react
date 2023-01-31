@@ -7,7 +7,7 @@ export default function App() {
       {/* <Button status="cancel">Cancel</Button> */}
       {/* <Button status="confirm">Confirm</Button> */}
       {/* <Avatar /> */}
-      <ShoppingCart />
+      {/* <ShoppingCart /> */}
     </>
   );
 }

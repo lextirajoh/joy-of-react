@@ -1,4 +1,4 @@
-export function CartTable({ items }: IProps) {
+export default function CartTable({ items }: IProps) {
   return (
     <table className="shopping-cart">
       <thead>
