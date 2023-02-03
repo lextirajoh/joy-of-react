@@ -14,7 +14,6 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
-  background-color: grey;
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -142,7 +141,7 @@ tr:not(:last-of-type) td {
 
 /* BADGES */
 
-:root {
+/* :root {
   --shadow-color: 286deg 36% 48%;
   --shadow-elevation-high:
     drop-shadow(0.3px 0.5px 0.5px hsl(var(--shadow-color) / 0.69))
@@ -218,4 +217,37 @@ body {
 }
 .golden.badge-list li {
   background: hsl(50deg 70% 92%);
+} */
+
+/* RANGE EX */
+
+html {
+  --spacing: 8px;
+  background: hsl(210deg, 15%, 6%);
+}
+
+.grid {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing);
+  padding: var(--spacing);
+  background: white;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  gap: var(--spacing);
+}
+
+.cell {
+  flex: 1;
+  aspect-ratio: 1 / 1;
+  border: 1px solid hsl(210deg 20% 80%);
+  border-radius: 4px;
+}
+.cell:hover {
+  background: hsl(210deg 20% 80%);
 }

@@ -1,4 +1,4 @@
-import { Avatar, Badges, Button, ContactCard, ShoppingCart } from './components';
+import { Avatar, Badges, Button, ContactCard, RangeEx, ShoppingCart } from './components';
 
 export default function App() {
   return (
@@ -8,7 +8,8 @@ export default function App() {
       {/* <Button status="confirm">Confirm</Button> */}
       {/* <Avatar /> */}
       {/* <ShoppingCart /> */}
-      <Badges/>
+      {/* <Badges/> */}
+      <RangeEx />
     </>
   );
 }
