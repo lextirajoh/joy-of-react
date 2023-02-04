@@ -5,4 +5,5 @@ export * from './ContactCard';
 export * from './ShoppingCart';
 export * from './Badges';
 export * from './RangeEx';
+export * from './CSSModules';
 

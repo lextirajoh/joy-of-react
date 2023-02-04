@@ -1,6 +1,10 @@
 import { Avatar, Badges, Button, ContactCard, RangeEx, ShoppingCart } from './components';
 
 export default function App() {
+  function doSomething() {
+    console.log('clicked');
+  }
+
   return (
     <>
       {/* <ContactCard /> */}
@@ -9,7 +13,8 @@ export default function App() {
       {/* <Avatar /> */}
       {/* <ShoppingCart /> */}
       {/* <Badges/> */}
-      <RangeEx />
+      {/* <RangeEx /> */}
+      <button onClick={doSomething}>click</button>
     </>
   );
 }

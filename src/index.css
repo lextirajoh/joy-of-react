@@ -14,6 +14,7 @@ html, body {
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
+  background-color: rgb(243, 195, 128);
 }
 img, picture, video, canvas, svg {
   display: block;
@@ -30,7 +31,7 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* Basic theme styles */
-body {
+/* body {
   padding: 16px;
   font-family: 'Wotfard', sans-serif;
 }
@@ -45,10 +46,10 @@ th {
 }
 tr:not(:last-of-type) td {
   border-bottom: 1px solid hsl(0deg 0% 50%);
-}
+} */
 
 /* Custom fonts */
-@font-face {
+/* @font-face {
   font-family: 'Wotfard';
   src: url('https://sandpack-bundler.vercel.app/fonts/wotfard/wotfard-semibold-webfont.woff2')
     format('woff2');
@@ -73,7 +74,7 @@ tr:not(:last-of-type) td {
   font-weight: 400;
   font-style: normal;
   font-display: fallback;
-}
+} */
 
 /* AVATAR */
 
@@ -221,7 +222,7 @@ body {
 
 /* RANGE EX */
 
-html {
+/* html {
   --spacing: 8px;
   background: hsl(210deg, 15%, 6%);
 }
@@ -250,4 +251,4 @@ html {
 }
 .cell:hover {
   background: hsl(210deg 20% 80%);
-}
+} */
