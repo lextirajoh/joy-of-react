@@ -8,7 +8,7 @@ export default function Grid({ numRows, numCols }: IProps) {
           {range(numCols).map((col) => (
             <div className="cell" key={crypto.randomUUID()} />
           ))}
-        </div> 
+        </div>
       ))}
     </div>
   );
