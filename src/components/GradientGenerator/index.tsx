@@ -28,6 +28,8 @@ export function GradientGenerator() {
     setColors(nextColors);
   }
 
+  console.log(colors)
+
   return (
     <div className="wrapper">
       <div className="actions">
@@ -53,7 +55,7 @@ export function GradientGenerator() {
                   id={colorId}
                   type="color"
                   value={color}
-                  onChange={() => {
+                  onChange={(event) => {
                     const nextColors = [...colors];
                     nextColors[index] = event.target.value;
                     setColors(nextColors);

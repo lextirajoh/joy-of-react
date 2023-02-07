@@ -13,6 +13,7 @@ import {
   ShoppingCart,
   TwoFactor,
   GradientGenerator,
+  ShoppingList,
 } from './components';
 
 export default function App() {
@@ -47,7 +48,8 @@ export default function App() {
       {/* <CountryPicker /> */}
       {/* <TwoFactor/> */}
       {/* <GenArt /> */}
-      <GradientGenerator />
+      {/* <GradientGenerator /> */}
+      <ShoppingList/>
     </>
   );
 }
