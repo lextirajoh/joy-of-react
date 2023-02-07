@@ -1,6 +1,11 @@
 export default function ProfileCard({ profile }: IProps) {
   const numberOfBadges = profile.badges.length;
 
+
+
+
+
+
   return (
     <article className="profile-card">
       <header>
@@ -16,7 +21,7 @@ export default function ProfileCard({ profile }: IProps) {
             <li key={badge.slug}>{badge.label}</li>
           ))}
         </ul>
-      )}
+      )} 
     </article>
   );
 }

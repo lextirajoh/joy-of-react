@@ -8,3 +8,4 @@ export * from './RangeEx';
 export * from './Form';
 export * from './CountryPicker';
 export * from './TwoFactor';
+export * from './GenerativeArt';

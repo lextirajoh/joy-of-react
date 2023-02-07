@@ -7,6 +7,7 @@ import {
   ContactCard,
   CountryPicker,
   Form,
+  GenArt,
   RangeEx,
   ShoppingCart,
   TwoFactor,
@@ -41,8 +42,9 @@ export default function App() {
       {/* <button onClick={() => setCount(count + 1)}>{count}</button> */}
       {/* <button onClick={handleClick}>{count}</button> */}
       {/* <Form /> */}
-      <CountryPicker />
-      <TwoFactor/>
+      {/* <CountryPicker /> */}
+      {/* <TwoFactor/> */}
+      <GenArt />
     </>
   );
 }
