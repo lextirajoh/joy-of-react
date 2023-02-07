@@ -1,5 +1,5 @@
 export const range = (start, end, step = 1) => {
-  let output = [];
+  const output: number[] = [];
   if (typeof end === 'undefined') {
     end = start;
     start = 0;
@@ -21,7 +21,7 @@ export const normalize = (
   const standardNormalization =
     (number - currentScaleMin) /
     (currentScaleMax - currentScaleMin);
-
+                         
   // Next, transpose that value to our desired scale.
   return (
     (newScaleMax - newScaleMin) *

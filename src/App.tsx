@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React from 'react';
 
 import {
@@ -11,6 +12,7 @@ import {
   RangeEx,
   ShoppingCart,
   TwoFactor,
+  GradientGenerator,
 } from './components';
 
 export default function App() {
@@ -44,7 +46,8 @@ export default function App() {
       {/* <Form /> */}
       {/* <CountryPicker /> */}
       {/* <TwoFactor/> */}
-      <GenArt />
+      {/* <GenArt /> */}
+      <GradientGenerator />
     </>
   );
 }
