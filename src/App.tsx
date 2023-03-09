@@ -14,25 +14,15 @@ import {
   TwoFactor,
   GradientGenerator,
   ShoppingList,
+  Toasty
 } from './components';
 
 export default function App() {
-  // function doSomething() {
-  //   console.log('clicked');
-  // }
 
-  //   const [count, setCount ] = React.useState(0)
-
-  // function handleClick () {
-  //   setCount(count + 1)
-  // }
-
-  // const title = 'React';
-
-  // console.log(Math.round(Math.random()*100))
 
   return (
     <>
+
       {/* <ContactCard /> */}
       {/* <Button status="cancel">Cancel</Button> */}
       {/* <Button status="confirm">Confirm</Button> */}
@@ -49,7 +39,9 @@ export default function App() {
       {/* <TwoFactor/> */}
       {/* <GenArt /> */}
       {/* <GradientGenerator /> */}
-      <ShoppingList/>
+      {/* <ShoppingList/> */}
+
+
     </>
   );
 }

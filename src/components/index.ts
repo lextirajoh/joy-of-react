@@ -11,3 +11,4 @@ export * from './TwoFactor';
 export * from './GenerativeArt';
 export * from './GradientGenerator';
 export * from './ShoppingList';
+export * from './Toasty';
