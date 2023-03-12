@@ -14,14 +14,14 @@ import {
   TwoFactor,
   GradientGenerator,
   ShoppingList,
-  Toasty
+  Toasty,
+  Klad,
 } from './components';
 
 export default function App() {
-
-
   return (
     <>
+      <Klad />
 
       {/* <ContactCard /> */}
       {/* <Button status="cancel">Cancel</Button> */}
@@ -40,8 +40,6 @@ export default function App() {
       {/* <GenArt /> */}
       {/* <GradientGenerator /> */}
       {/* <ShoppingList/> */}
-
-
     </>
   );
 }

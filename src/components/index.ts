@@ -1,4 +1,4 @@
-export * from './Avatar';
+export * from './Badges/Avatar';
 export * from './Badges';
 export * from './Button';
 export * from './ContactCard';
@@ -12,3 +12,4 @@ export * from './GenerativeArt';
 export * from './GradientGenerator';
 export * from './ShoppingList';
 export * from './Toasty';
+export * from './Klad';
